@@ -1,0 +1,29 @@
+
+.background{
+    background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 110vh;
+    min-height: 600px;
+}
+.squreBG{
+    background-color: #fdfd96;
+}
+.whitebg{
+    background-color: white;
+}
+.col-12{
+    padding-top: 12px;
+}
+.littlepadding{
+    padding-top: 20px;
+}
+.card-body{
+    width: auto;
+    height: 600px;
+}
+.mgl{
+    margin-left: 10px;
+}

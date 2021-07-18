@@ -1,0 +1,59 @@
+<h1 class="center" *ngIf='resultFound()' style="padding-top: 10px;">สภาพอากาศของเมือง {{currentWeather.name}}, {{currentWeather.sys?.country}}</h1>
+<table *ngIf='resultFound()'>
+    
+    <p *ngIf='province'>
+        <img src={{province.image}} width="200px" height="200px" style="margin-left: 40%; padding-top: 10px;"/> 
+    </p>
+
+    <tbody>
+        <tr>
+            <td>
+                <h5 *ngIf='province'>
+                        คำขวัญ: {{province.slogan}}
+                </h5>
+            </td>
+        </tr>
+        <tr *ngFor='let w of currentWeather.weather'>
+            <td>
+                <h5 >
+                        สภาพอากาศปัจจุบัน: 
+                </h5>
+            </td>
+            <td>
+                    <h5>{{w?.description}}</h5>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <h5>อุณหภูมิ ปัจจุบัน: </h5>
+            </td>
+            <td>
+                <h5>{{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h5>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h5>อุณหภูมิ สูงสุด:</h5>
+            </td>
+            <td>
+                <h5>{{currentWeather.main?.temp - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h5>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h5>อุณหภูมิ ต่ำสุด:</h5>
+            </td>
+            <td>
+                <h5>{{currentWeather.main?.temp_min - 273.15 | number:'1.0-0'}}<sup>o</sup>C</h5>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h5>ความชื้น</h5>
+            </td>
+            <td>
+                <h5>{{currentWeather.main?.humidity}}%</h5>
+            </td>
+        </tr>
+    </tbody>
+</table>

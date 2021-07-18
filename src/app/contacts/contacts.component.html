@@ -1,0 +1,51 @@
+<html>
+<div class="container littlepadding">
+    <h1 class="mt-4" style="text-align: center; color: darkgreen;">ติดต่อ</h1>
+    <p></p>
+    <table class='table borderless'>
+        <thead>
+            <tr>
+                <th>ชื่อ</th>
+                <th>นามสกุล</th>
+                <th>รหัสนักศึกษา</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>นายเจษฎากร</td>
+                <td>อยู่จันนา</td>
+                <td>60122201017</td>
+            </tr>
+            <tr>
+                <td>นายศุภณัฐ</td>
+                <td>หวังหลี</td>
+                <td>60122201023</td>
+            </tr>
+            <tr>
+                <td>นายภาคิน</td>
+                <td>แก้วจุนันท์</td>
+                <td>60122201024</td>
+            </tr>
+            <tr>
+                <td>นายปัณณวัฒน์</td>
+                <td>กาญจนปราการ</td>
+                <td>60122201040</td>
+            </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <p><i class="fa fa-envelope"></i> Weather.webtest@ssru.ac.th</p>
+    <p><i class="fa fa-facebook-official"></i> Weather Official</p>
+    <p><i class="fa fa-map-marker"></i> มหาวิทยาลัยราชภัฏสวนสุนันทา</p>
+
+    <div class="form-group">
+        <form (ngSubmit)="onSubmit()">
+            <label for="report">คำวิจารณ์ / ข้อเสนอแนะ :</label>
+            <textarea class="form-control" rows="5" id="report" required [(ngModel)]="reports" name="report"></textarea>
+            <p></p>
+            <button type="submit" class="btn btn-success">ส่ง</button>
+        </form>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<div class=background>
+    <div class="container">
+        <div class="col-12">
+            <img src="https://i.ibb.co/q9s8VT8/bg.png" alt="bg"style="width: 100%; height: 100%;">
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-secondary btn-lg" (click)="num=1"><i class="fa fa-home"></i> หน้าหลัก</button> 
+            <button type="button" class="btn btn-secondary btn-lg mgl" (click)="num=2"><i class="fa fa-user"></i> นักศึกษา</button>
+            <button type="button" class="btn btn-secondary btn-lg mgl" (click)="num=3"><i class="fa fa-cloud"></i> สภาพอากาศ</button> 
+            <button type="button" class="btn btn-secondary btn-lg mgl" (click)="num=4"><i class="fa fa-question"></i> ช่วยเหลือ</button> 
+            <button type="button" class="btn btn-secondary btn-lg mgl" (click)="num=5"><i class="fa fa-id-badge"></i> ติดต่อ</button> 
+            <button type="button" class="btn btn-secondary btn-lg mgl" (click)="num=6"><i class="fa fa-handshake-o"></i> วิธีรับมือสภาพอากาศ</button>
+            <button type="button" class="btn btn-secondary btn-lg mgl" (click)="num=7"><i class="fa fa-search"></i> ค้นหา</button>
+        </div>
+        <div class="container littlepadding" [ngSwitch]="num">
+            <div class="row">
+                <div class="col-lg-8 whitebg">
+                    <p *ngSwitchCase="1">
+                        <app-homepage></app-homepage>
+                    </p>
+                    <p *ngSwitchCase="2">
+                        <app-register></app-register>
+                    </p>
+                    <p *ngSwitchCase="3">
+                        <app-weather></app-weather>
+                    </p>
+                    <p *ngSwitchCase="4">
+                        <app-help></app-help>
+                    </p>
+                    <p *ngSwitchCase="5">
+                        <app-contacts></app-contacts>
+                    </p>
+                    <p *ngSwitchCase="6">
+                        <app-howto></app-howto>
+                    </p>
+                    <p *ngSwitchCase="7">
+                        <app-search></app-search>
+                    </p>
+                    <p *ngSwitchCase="default">
+                        <app-homepage></app-homepage>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-6 squreBG">
+                        <h5 class="card-header">สถิติการเข้าใช้งานสภาพอากาศ</h5>
+                        <div class="card-body overflow-auto">
+                            <app-statistic></app-statistic>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

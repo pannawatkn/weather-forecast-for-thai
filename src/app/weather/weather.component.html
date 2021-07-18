@@ -1,0 +1,30 @@
+<html>
+<div class="container littlepadding">
+    <div class="row">
+        <div class="col-lg-12 whitebg">
+
+          <nav class="navbar navbar-light bg-light">
+            <form class="form-inline" (ngSubmit)='search(searchForm)' #searchForm='ngForm'>
+              <input class="form-control mr-sm-2" 
+              style="margin:auto;width: 520px;" 
+              type="search" 
+              placeholder="Search" 
+              aria-label="Search"
+              [(ngModel)]='loc' 
+              #lo='ngModel' 
+              name='lo' 
+              required type='text'>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i> Search</button>
+            </form>
+          </nav>
+
+          <div *ngIf='provinces'>
+              <app-current-weather [provinces]='provinces'></app-current-weather>
+          </div>
+            
+
+        </div>
+    </div>
+</div>
+
+</html>
