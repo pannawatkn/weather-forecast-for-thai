@@ -1,6 +1,6 @@
 # Weather Forecast for Thai (This is a school project)
 
-Weather Forecast using OpenWeatherMap API (https://openweathermap.org/).
+Weather Forecast using OpenWeatherMap API. (https://openweathermap.org/)
 
 # Homepage
 
