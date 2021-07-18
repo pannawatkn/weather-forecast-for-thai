@@ -1,7 +1,8 @@
 # Weather Forecast for Thai
 
-Weather Forecast using OpenWeatherMap API (https://openweathermap.org/) <br><br>
-***This is a school project***
+** <h1>This is a school project.</h1> **
+
+Weather Forecast using OpenWeatherMap API (https://openweathermap.org/).
 
 # Homepage
 
@@ -9,13 +10,13 @@ Weather Forecast using OpenWeatherMap API (https://openweathermap.org/) <br><br>
 
 # Student
 
-For those who want to participate in this project
+For those who want to participate in this project.
 
 ![image](../main/src/assets/readme-img/student.PNG)
 
 # Weather conditions
 
-You can search Thai province and it will shows the weather condition and slogan
+You can search Thai province and it will shows the weather condition and slogan.
 
 ![image](../main/src/assets/readme-img/search.PNG)
 
@@ -29,6 +30,6 @@ You can search Thai province and it will shows the weather condition and slogan
 
 # Search a student
 
-This is for searching a student who registered in this website
+This is for searching a student who registered in this website.
 
 ![image](../main/src/assets/readme-img/searchstudent.png)
